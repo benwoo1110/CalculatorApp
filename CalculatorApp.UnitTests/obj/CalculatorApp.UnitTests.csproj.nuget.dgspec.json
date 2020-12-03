@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj": {}
+    "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj": {
+    "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj",
+        "projectUniqueName": "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj",
         "projectName": "CalculatorApp.UnitTests",
-        "projectPath": "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj",
+        "projectPath": "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp.UnitTests\\CalculatorApp.UnitTests.csproj",
         "packagesPath": "C:\\Users\\Ben10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp.UnitTests\\obj\\",
+        "outputPath": "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ben10\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj": {
-                "projectPath": "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj"
+              "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp\\CalculatorApp.csproj": {
+                "projectPath": "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp\\CalculatorApp.csproj"
               }
             }
           }
@@ -73,18 +73,18 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj": {
+    "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp\\CalculatorApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
+        "projectUniqueName": "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp\\CalculatorApp.csproj",
         "projectName": "CalculatorApp",
-        "projectPath": "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp\\CalculatorApp.csproj",
+        "projectPath": "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp\\CalculatorApp.csproj",
         "packagesPath": "C:\\Users\\Ben10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ben10\\OneDrive - Ngee Ann Polytechnic\\2020 school files\\Programming II\\CalculatorApp\\CalculatorApp\\obj\\",
+        "outputPath": "C:\\Users\\Ben10\\Documents\\BitBucket\\calculatorapp\\CalculatorApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ben10\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -128,7 +128,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
