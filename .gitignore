@@ -422,13 +422,13 @@ launchSettings.json
 
 # Build results
 
-[Dd]ebug/
-[Rr]elease/
-x64/
-build/
-[Bb]in/
-[Oo]bj/
-.vs/
+[Dd]ebug/*
+[Rr]elease/*
+x64/*
+build/*
+[Bb]in/*
+[Oo]bj/*
+.vs/*
 tools
 !tools/packages.config
 
