@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace CalculatorApp
@@ -103,7 +104,20 @@ namespace CalculatorApp
 
         private void Equal_Click(object sender, EventArgs e)
         {
-            Expression.Text = new ExpressionBuilder(Expression.Text).Calculate().ToString();
+            double result;
+            try
+            {
+                result = new ExpressionBuilder(Expression.Text).Calculate();
+            }
+            catch (Exception error)
+            {
+                string caption = "ERROR";
+                string message = error.Message;
+                MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            
+            Expression.Text = result.ToString(CultureInfo.InvariantCulture);
         }
 
         private void Clear_Click(object sender, EventArgs e)
