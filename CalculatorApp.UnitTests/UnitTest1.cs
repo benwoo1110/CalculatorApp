@@ -14,6 +14,9 @@ namespace CalculatorApp.UnitTests
         {
             double result = new ExpressionBuilder("30-5x(12-((2+2)x(5-3)))").Calculate();
             
+            // double result = new ExpressionBuilder("28364712634821÷2").Calculate();
+
+            
             Assert.That(result, Is.EqualTo(10));
         }
     }

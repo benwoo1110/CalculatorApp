@@ -66,7 +66,7 @@ namespace CalculatorApp
 
         public double Calculate()
         {
-            Console.WriteLine("OG: " + ToString());
+            Console.WriteLine("Expression: " + ToString());
             ResolveBrackets();
             Console.WriteLine("Brackets: " + ToString());
             ResolveOperator(new[] {OperatorType.Divide, OperatorType.Multiply});
@@ -86,18 +86,15 @@ namespace CalculatorApp
             }
             
             List<Node> resolveNodes = new List<Node>();
+            NumberNode lastResolve = null;
             
-            for (int index=0; index<nodes.Count-2; index+=2)
+            for (int index=0; index<=nodes.Count-2; index+=2)
             {
                 OperatorNode operatorNode = (OperatorNode) nodes[index + 1];
                 if (typesToResolve.Contains(operatorNode.Operator))
                 {
-                    NumberNode resolveNode = CalculateSingle((NumberNode) nodes[index], operatorNode,
-                        (NumberNode) nodes[index + 2]);
-                    nodes[index + 2] = resolveNode;
-                    resolveNodes.Add(resolveNode);
+                    nodes[index + 2] = CalculateNumberPair((NumberNode) nodes[index], operatorNode, (NumberNode) nodes[index + 2]);
                 }
-
                 else
                 {
                     resolveNodes.Add(nodes[index]);
@@ -105,7 +102,7 @@ namespace CalculatorApp
                 }
             }
 
-            if (resolveNodes.Last() is OperatorNode)
+            if (resolveNodes.Count == 0 || resolveNodes.Last() is OperatorNode)
             {
                 resolveNodes.Add(nodes.Last());
             }
@@ -113,7 +110,7 @@ namespace CalculatorApp
             nodes = resolveNodes;
         }
 
-        private NumberNode CalculateSingle(NumberNode num1, OperatorNode opt, NumberNode num2)
+        private NumberNode CalculateNumberPair(NumberNode num1, OperatorNode opt, NumberNode num2)
         {
             double result = -1;
             switch (opt.Operator)
@@ -171,8 +168,7 @@ namespace CalculatorApp
                     if (openCount == 0 && openIndex != -1)
                     {
                         ExpressionBuilder expression =
-                            new ExpressionBuilder(nodes.GetRange(openIndex, counter - openIndex));
-                        Console.WriteLine("Parsing brackets: " + expression);
+                            new ExpressionBuilder(nodes.GetRange(openIndex, counter - openIndex)); 
                         resolveNodes.Add(new NumberNode(expression.Calculate()));
                     }
                 }
@@ -188,7 +184,7 @@ namespace CalculatorApp
         public override string ToString()
         {
             StringBuilder buffer = new StringBuilder();
-            nodes.ForEach(node => buffer.Append(node));
+            nodes.ForEach(node => buffer.Append(node).Append(' '));
             return buffer.ToString();
         }
     }
