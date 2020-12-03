@@ -1,0 +1,15 @@
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.exe
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.deps.json
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.runtimeconfig.json
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.runtimeconfig.dev.json
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.dll
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\bin\Debug\netcoreapp3.1\CalculatorApp.pdb
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.csprojAssemblyReference.cache
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.AssemblyInfoInputs.cache
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.AssemblyInfo.cs
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.csproj.CoreCompileInputs.cache
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.dll
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.pdb
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.genruntimeconfig.cache
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.csproj.GenerateResource.cache
+C:\Users\Ben10\OneDrive - Ngee Ann Polytechnic\2020 school files\Programming II\CalculatorApp\CalculatorApp\obj\Debug\netcoreapp3.1\CalculatorApp.Calculator.resources
