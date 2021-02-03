@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Globalization;
+using CalculatorApp.Enums;
 
-namespace CalculatorApp
+namespace CalculatorApp.Nodes
 {
     public class NumberNode : Node
     {

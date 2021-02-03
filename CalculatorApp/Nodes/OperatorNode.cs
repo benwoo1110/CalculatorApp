@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using CalculatorApp.Enums;
 
-namespace CalculatorApp
+namespace CalculatorApp.Nodes
 {
     public class OperatorNode : Node
     {

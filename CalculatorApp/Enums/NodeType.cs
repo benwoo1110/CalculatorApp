@@ -1,4 +1,4 @@
-﻿namespace CalculatorApp
+﻿namespace CalculatorApp.Enums
 {
     public enum NodeType
     {

@@ -111,8 +111,8 @@ namespace CalculatorApp
             }
             catch (Exception error)
             {
-                string caption = "ERROR";
-                string message = error.Message;
+                var caption = "ERROR";
+                var message = error.Message;
                 MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }

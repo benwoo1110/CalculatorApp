@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using CalculatorApp.Enums;
+using CalculatorApp.Nodes;
 
 namespace CalculatorApp
 {
@@ -18,7 +20,7 @@ namespace CalculatorApp
         {
             nodes = new List<Node>();
             
-            StringBuilder buffer = new StringBuilder();
+            var buffer = new StringBuilder();
 
             if (expression[0].Equals('-'))
             {
@@ -31,7 +33,7 @@ namespace CalculatorApp
                 expression = expression.Remove(0, 1);
             }
             
-            foreach (char c in expression)
+            foreach (var c in expression)
             {
                 if (char.IsWhiteSpace(c))
                 {
@@ -85,12 +87,11 @@ namespace CalculatorApp
                 return;
             }
             
-            List<Node> resolveNodes = new List<Node>();
-            NumberNode lastResolve = null;
+            var resolveNodes = new List<Node>();
             
-            for (int index=0; index<=nodes.Count-2; index+=2)
+            for (var index=0; index<=nodes.Count-2; index+=2)
             {
-                OperatorNode operatorNode = (OperatorNode) nodes[index + 1];
+                var operatorNode = (OperatorNode) nodes[index + 1];
                 if (typesToResolve.Contains(operatorNode.Operator))
                 {
                     nodes[index + 2] = CalculateNumberPair((NumberNode) nodes[index], operatorNode, (NumberNode) nodes[index + 2]);
@@ -133,13 +134,13 @@ namespace CalculatorApp
         
         private void ResolveBrackets()
         {
-            List<Node> resolveNodes = new List<Node>();
+            var resolveNodes = new List<Node>();
             
-            int openCount = 0;
-            int openIndex = -1;
-            int counter = -1;
+            var openCount = 0;
+            var openIndex = -1;
+            var counter = -1;
             
-            foreach (Node node in nodes)
+            foreach (var node in nodes)
             {
                 counter++;
                 
@@ -153,28 +154,41 @@ namespace CalculatorApp
                     continue;
                 }
 
-                if (operatorNode.Operator.Equals(OperatorType.OpenBracket))
+                switch (operatorNode.Operator)
                 {
-                    if (openCount == 0)
+                    case OperatorType.OpenBracket:
                     {
-                        openIndex = counter+1;
+                        if (openCount == 0)
+                        {
+                            openIndex = counter+1;
+                        }
+                        openCount++;
+                        break;
                     }
-                    openCount++;
-                }
-                else if (operatorNode.Operator.Equals(OperatorType.CloseBracket))
-                {
-                    openCount--;
                     
-                    if (openCount == 0 && openIndex != -1)
+                    case OperatorType.CloseBracket:
                     {
-                        ExpressionBuilder expression =
-                            new ExpressionBuilder(nodes.GetRange(openIndex, counter - openIndex)); 
-                        resolveNodes.Add(new NumberNode(expression.Calculate()));
+                        openCount--;
+                    
+                        if (openCount == 0 && openIndex != -1)
+                        {
+                            var expression =
+                                new ExpressionBuilder(nodes.GetRange(openIndex, counter - openIndex)); 
+                            resolveNodes.Add(new NumberNode(expression.Calculate()));
+                        }
+
+                        break;
                     }
-                }
-                else if (openCount == 0)
-                {
-                    resolveNodes.Add(node);
+                    
+                    default:
+                    {
+                        if (openCount == 0)
+                        {
+                            resolveNodes.Add(node);
+                        }
+
+                        break;
+                    }
                 }
             }
 
@@ -183,7 +197,7 @@ namespace CalculatorApp
 
         public override string ToString()
         {
-            StringBuilder buffer = new StringBuilder();
+            var buffer = new StringBuilder();
             nodes.ForEach(node => buffer.Append(node).Append(' '));
             return buffer.ToString();
         }

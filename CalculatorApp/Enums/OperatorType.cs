@@ -1,7 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-
-namespace CalculatorApp
+﻿namespace CalculatorApp.Enums
 {
     public enum OperatorType
     {
